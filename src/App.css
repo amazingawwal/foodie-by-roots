@@ -41,18 +41,37 @@
   color: #888;
 }
 
+.logo-image img{
+  width: 7%;
+  height: 5%;
+}
 
-.navbar-collapse{
-  margin-left: 50% ;
+
+.header-navbar{
+  margin-left: 50%;
+  font-family:'Courier New', Courier, monospace;
+  font-size:medium;
+  font-weight: bold;
+  
+}
+
+.header-navbar a:hover{
+  font-weight:900;
+  color: palevioletred;
+  border-bottom: #5ff39f solid 0.2em;
 }
 
 .sidebar{
   background-color: #F3B95F;
- 
-  
 }
 
-.color1{
+.sidebar a:hover{
+  font-weight:900;
+  color: palevioletred;
+  border-bottom: #5ff39f solid 0.2em;
+}
+
+/* .color1{
   color: #D04848;
   padding-bottom: 2em;
   padding-top: 2em;
@@ -60,10 +79,29 @@
 
 .color2{
   color: #6895D2;
-}
+} */
 
 ul {
   list-style-type: none; 
+}
+
+/* .menu-list li{
+  display: flex;
+  flex-direction: column;
+} */
+
+.menu-list img{
+  width: 50%;
+  height: 25%;
+}
+
+.menu-list a{
+  font-size: smaller;
+  padding-left: 0.5em;
+}
+
+.menu-list li{
+  padding-bottom: 1em;
 }
 
 .recipe-container {
@@ -79,36 +117,70 @@ ul {
 .recipe img{
   border-radius: 15%;
   width: 100%;
+  height: auto;
 
 }
 
 .recipe h4{
   font-size: medium;
   text-align: center;
+  font-size: small;
 }
 
 .generate-food{
   text-align: center;
   font-family:serif;
+  font-size:larger;
 }
 
 .page-heading{
-  text-align: center;
-  padding-top: 1rem;
-  font-family: cursive;
+  text-align:center;
+  padding-top: 0.5rem;
+  font-family: "Dancing Script", cursive;
+  font-size: xx-large;
 }
 
 .search{
   display: flex;
-  flex-direction: column;
-  width: 25%;
+  flex-direction: row;
+  /* width: 25%; */
   gap: 1em;
-  margin-left: 10%;
+  margin-left: 3%;
+  /* background-color: #BFEA7C; */
+  width: 100%;
 }
 
 /* .menu-list a{
   padding-bottom: 5em;
 } */
+
+.search input{
+  border-color: #F3B95F;
+  border-radius: 5%;
+}
+
+.search button{
+  border-color: #F3B95F;
+  border-radius: 5%;
+}
+
+.search input:hover{
+  border-color: #5ff3b8;
+  border-radius: 5%;
+  color: red;
+}
+
+.search button:hover{
+  border-color: #5ff39f;
+  border-radius: 5%;
+  color: red;
+}
+
+.search select:hover{
+  border-color: #5ff39f;
+  border-radius: 5%;
+  color: red;
+}
 
 .ingredients-container{
   border-radius: 15%;
@@ -118,23 +190,23 @@ ul {
   
 }
 
-
-
 .ingredients{
   flex: 0 0 calc(20% - 20px); 
-  margin: 10px;
-  background-color: #6895D2;
+  margin: 6px;
+  background-color: #68d29a;
   border-top-left-radius: 10%;
 }
 
 .ingredients p{
   text-align: center;
-  padding: 2em;
-  font-size: larger;
+  padding: 1em;
+  font-size: x-large;
+  font-family: "Shadows Into Light";
 }
 
 .ingredients img{
   text-align: center;
-  padding: 2em;
+  padding: 1em;
   font-size: larger;
 }
+

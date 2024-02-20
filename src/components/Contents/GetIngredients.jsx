@@ -17,8 +17,8 @@ const RecipeGenerator = () => {
 
   return (
     <div>
-      <h2 className='generate-food'>Get your Recipes and Ingredients</h2>
-      <div>
+      <h2 className='generate-food'>Recipes and Ingredients</h2>
+      <div className='search'>
         <input type="text" value={foodType} onChange={(e) => setFoodType(e.target.value)} placeholder="Enter food type" />
         <select value={searchType} onChange={(e) => setSearchType(e.target.value)}>
           <option value="recipes">Recipes</option>
@@ -26,6 +26,7 @@ const RecipeGenerator = () => {
         </select>
         <button onClick={handleSearch}>Search</button>
       </div>
+      <hr />
       <div className='ingredients-container'>
         {results && results.map((result, index) => (
           <div className='ingredients' key={index}>

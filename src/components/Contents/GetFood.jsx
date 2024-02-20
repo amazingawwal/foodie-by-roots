@@ -16,11 +16,12 @@ const FoodGenerator = () => {
 
   return (
     <div>
-      <h3 className='generate-food'>Generate Food Ideas</h3>
+      <h3 className='generate-food'>Food Ideas</h3>
       <div className='search'>
       <input type="text" value={query} onChange={(e) => setQuery(e.target.value)} placeholder="Enter ingredients or keywords" />
       <button onClick={handleSearch}>Search</button>
       </div>
+      <hr />
       <div className="recipe-container">
         {recipes.map((recipe) => (
           <div className="recipe" key={recipe.id}>

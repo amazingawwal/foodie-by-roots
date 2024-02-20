@@ -16,6 +16,8 @@ const MainContent = () => {
         <Routes>
             <Route path='/' element ={<Home/>}></Route>
             <Route path='/about' element={<About/>}></Route>
+            <Route path='food-ideas' element={<FoodGenerator/>}></Route>
+            <Route path='ingredients' element={<RecipeGenerator/>}></Route>
           </Routes>
       </div>
     </main>
