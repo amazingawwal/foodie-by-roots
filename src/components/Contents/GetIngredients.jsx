@@ -8,7 +8,7 @@ const RecipeGenerator = () => {
 
   const handleSearch = async () => {
     try {
-      const response = await axios.get(`https://api.spoonacular.com/food/${searchType}/search?query=${foodType}&apiKey=f2c89358faa046aba36a500e21dafa0d`);
+      const response = await axios.get(`https://api.spoonacular.com/food/${searchType}/search?query=${foodType}&apiKey=2c89358faa046aba36a500e21dafa0d`);
       setResults(response.data.results);
     } catch (error) {
       console.error(`Error fetching ${searchType}:`, error);
