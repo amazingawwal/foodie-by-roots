@@ -81,6 +81,10 @@
   color: #6895D2;
 } */
 
+.team-member img{
+  width: 20%;
+}
+
 ul {
   list-style-type: none; 
 }

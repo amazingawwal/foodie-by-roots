@@ -4,6 +4,7 @@ import FoodGenerator from './Contents/GetFood';
 import Home from './Contents/Home';
 import { Route, Routes } from 'react-router-dom';
 import About from './Contents/About';
+import RestaurantFinder from './Contents/FindRestaurants';
 
 
 
@@ -16,8 +17,9 @@ const MainContent = () => {
         <Routes>
             <Route path='/' element ={<Home/>}></Route>
             <Route path='/about' element={<About/>}></Route>
-            <Route path='food-ideas' element={<FoodGenerator/>}></Route>
-            <Route path='ingredients' element={<RecipeGenerator/>}></Route>
+            <Route path='/food-ideas' element={<FoodGenerator/>}></Route>
+            <Route path='/ingredients' element={<RecipeGenerator/>}></Route>
+            <Route path='/restaurants-near-me' element={<RestaurantFinder/>}></Route>
           </Routes>
       </div>
     </main>
