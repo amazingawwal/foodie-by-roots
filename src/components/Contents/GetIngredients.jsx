@@ -21,7 +21,7 @@ const RecipeGenerator = () => {
       <div className='search'>
         <input type="text" value={foodType} onChange={(e) => setFoodType(e.target.value)} placeholder="Enter food type" />
         <select value={searchType} onChange={(e) => setSearchType(e.target.value)}>
-          {/* <option value="recipes">Recipes</option> */}
+          <option value="recipes">Recipes</option>
           <option value="ingredients">Ingredients</option>
         </select>
         <button onClick={handleSearch}>Search</button>
