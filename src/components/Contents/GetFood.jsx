@@ -7,7 +7,7 @@ const FoodGenerator = () => {
 
   const handleSearch = async () => {
     try {
-      const response = await axios.get(`https://api.spoonacular.com/recipes/complexSearch?query=${query}&apiKey=2c89358faa046aba36a500e21dafa0d`);
+      const response = await axios.get(`https://api.spoonacular.com/recipes/complexSearch?query=${query}&apiKey=f2c89358faa046aba36a500e21dafa0d`);
       setRecipes(response.data.results);
     } catch (error) {
       console.error('Error fetching recipes:', error);

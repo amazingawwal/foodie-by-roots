@@ -5,6 +5,7 @@ import Home from './Contents/Home';
 import { Route, Routes } from 'react-router-dom';
 import About from './Contents/About';
 import RestaurantFinder from './Contents/FindRestaurants';
+import FridgeIngredientSuggester from './Contents/FridgeSuggestion';
 
 
 
@@ -20,6 +21,7 @@ const MainContent = () => {
             <Route path='/food-ideas' element={<FoodGenerator/>}></Route>
             <Route path='/ingredients' element={<RecipeGenerator/>}></Route>
             <Route path='/restaurants-near-me' element={<RestaurantFinder/>}></Route>
+            <Route path='/fridge-suggestions' element={<FridgeIngredientSuggester/>}></Route>
           </Routes>
       </div>
     </main>
