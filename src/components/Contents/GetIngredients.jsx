@@ -8,7 +8,7 @@ const RecipeGenerator = () => {
 
   const handleSearch = async () => {
     try {
-      const response = await axios.get(`https://api.spoonacular.com/food/${searchType}/search?query=${foodType}&apiKey=2c89358faa046aba36a500e21dafa0d`);
+      const response = await axios.get(`https://api.spoonacular.com/food/${searchType}/search?query=${foodType}&apiKey=f2c89358faa046aba36a500e21dafa0d`);
       setResults(response.data.results);
     } catch (error) {
       console.error(`Error fetching ${searchType}:`, error);
@@ -21,7 +21,7 @@ const RecipeGenerator = () => {
       <div className='search'>
         <input type="text" value={foodType} onChange={(e) => setFoodType(e.target.value)} placeholder="Enter food type" />
         <select value={searchType} onChange={(e) => setSearchType(e.target.value)}>
-          <option value="recipes">Recipes</option>
+          {/* <option value="recipes">Recipes</option> */}
           <option value="ingredients">Ingredients</option>
         </select>
         <button onClick={handleSearch}>Search</button>

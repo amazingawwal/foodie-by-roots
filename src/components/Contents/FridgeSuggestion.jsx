@@ -40,12 +40,13 @@ const FridgeIngredientSuggester = () => {
       />
       <button className='' onClick={suggestDishesFromFridge}>Suggest Dishes</button>
       </div>
+      <hr />
       {loading && <p>Loading...</p>}
       {error && <p>{error}</p>}
       {suggestedDishes.length > 0 && (
         <div>
           <h3 className='generate-food'>Suggested Dishes:</h3>
-          <hr />
+         
           <ul className='dishes-container'>
             {suggestedDishes.map((dish, index) => (
               <li className='dishes' key={index}>
