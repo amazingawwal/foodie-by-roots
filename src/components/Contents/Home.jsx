@@ -18,7 +18,8 @@ function Home (){
         <div>
             <hr />
             Hello buddy,
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam saepe pariatur distinctio, illum excepturi voluptas, inventore rerum voluptates esse non quis reprehenderit ex, recusandae quaerat cupiditate voluptatum mollitia minus laudantium.</p>
+            <p>A foodie app where you can find food recipes, get food ideas, find restaurants near you and get food suggestions based on the items in your fridge. 
+Explore the world of best culinary experience.</p>
             <div>
             <YouTube videoId={videoId} opts={opts} />
             </div>
