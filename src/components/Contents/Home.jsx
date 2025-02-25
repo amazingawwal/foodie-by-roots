@@ -17,7 +17,7 @@ function Home (){
         <>
         <div>
             <hr />
-            Hello, World
+            Hello buddy,
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam saepe pariatur distinctio, illum excepturi voluptas, inventore rerum voluptates esse non quis reprehenderit ex, recusandae quaerat cupiditate voluptatum mollitia minus laudantium.</p>
             <div>
             <YouTube videoId={videoId} opts={opts} />
